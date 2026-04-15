@@ -34,6 +34,14 @@ TEST(PasswordTest, ascii_test)
 	Password my_password;
 	ASSERT_EQ(1, my_password.count_leading_characters("'\0'"));
 }
+TEST(PasswordTest, string_case)
+{
+	ASSERT_STRCASEEQ("zar", "Zar");
+}
+TEST(PasswordTest, string_case2)
+{
+	ASSERT_STRCASEEQ("bar", "bar");
+}
 //TEST(PasswordTest, ){
 //  
 //	Password my_password;
