@@ -16,6 +16,9 @@ public:
   */
   int count_leading_characters(string word);
 
+  unsigned int unique_characters(string word);
+ 
+
   /*
   receives a string and returns whether it has both at least one upper-case
   letter and at least one lower-case letter

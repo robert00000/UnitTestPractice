@@ -42,6 +42,7 @@ TEST(PasswordTest, string_case2)
 {
 	ASSERT_STRCASEEQ("bar", "bar");
 }
+//TEST(unique_characters
 //TEST(PasswordTest, ){
 //  
 //	Password my_password;
