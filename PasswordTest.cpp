@@ -44,7 +44,11 @@ TEST(PasswordTest, string_case2)
 }
 TEST(PasswordTest, string_case3)
 {
-	ASSERT_STRCASENE("bar", "Bar");
+	ASSERT_STRCASENE("bar", "BAR");
+}
+TEST(PasswordTest, mixed_letter_password2){
+	Password my_password;
+	EXPECT_EQ(3, my_password.count_leading_characters("ZaZ"));
 }
 //TEST(unique_characters
 //TEST(PasswordTest, ){
